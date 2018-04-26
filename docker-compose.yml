@@ -1,12 +1,12 @@
 version: '3'
 services:
   jenkins:
-    image: jenkins/jenkins
+    image: hboaventura/jenkins-workshop
     ports:
      - "8180:8080"
      - "50000:50000"
   tomcat:
-    build: .
+    image: hboaventura/tomcat-workshop
     ports:
      - "8280:8080"
 
